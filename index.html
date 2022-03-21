@@ -1,36 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade-01 21/03/22</title>
+
+    <title>Curriculo</title>
 
     <style>
-        * {
-            text-align: center;
+        :root {
+            --background-color: rgb(248, 244, 244);
+            --primary-color: #000814;
+            --secondary-color: #001D3D;
+            --title-color: #003566; 
         }
+        * {
+        box-sizing: border-box;
+        color: var(--primary-color);
+        }
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin: 0px 0px;  
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        .box_name {
+            font-size: 22px;
+            color: var(--title-color);
+        }
+        .box_name strong{
+            font-size: 22px;
+            color: var(--title-color);
+
+        }
+        .date {
+            font-size: 14px;
+            color: var(--title-color);
+
+        }
+        .title {
+            font-size:16px;
+        }
+        body {
+            background-color: var(--background-color)
+        }
+        h1 {
+            color: var(--primary-color);
+        }
+        h2{
+            font-size: 30px;
+            color: var(--secondary-color)
+        }
+        h2 span {
+            background-color: #EDC330;
+            box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;
+        }
+
     </style>
 </head>
+
 <body>
-    <h1>Formulário</h1>
-    <form action="">
-        <label for="fname">Nome:</label><br>
-        <input type="text" id="fname" required><br>
+    <div class="row">
+            <div style="padding: 10px;">
+                <h1>Manoel Felipe C. A. Fernandes</h1>
+            <!-- <p>Entusiasta da tecnologia, adora jogar no tempo livre e de ter longas conversas sobre o universo...</p> -->
+            </div>
 
-        <label for="lname">Sobrenome:</label><br>
-        <input type="text" id="lname" required><br>
+        <div class="column" >
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br>
+            <div id="experiencias">
+                <h2> Experiencias </h2>   
 
-        <details>
-            <summary>pesquisa opcional</summary>
-            <label for="semestre">Semestre da Faculdade:</label><br>
-            <input type="number" id="semestre"><br>
-        </details>
+                <p id="experiencias_item01">
+                    <span class="box_name"> <strong>Iniciação Científica</strong>, CNQP</span> <br>
+                    <span class="date">Agosto/2020 - Agosto/2021</span> <br> <br>
+                    <span class="title"> 
+                        <strong>
+                            Análise de Dados Aberto Governamentais que utilizam a Ferramenta Ckan
+                        </strong> 
+                    </span> 
+                    <br>
+                    <details>
+                        <summary>
+                            <strong>Objetivo</strong>: Responder a perguntas de interesse público considerando a estratégia proposta.
+                        </summary>
+                        <p>
+                            responder questões de interesse de diversos setores da sociedade, incluindo gestores públicos, 
+                            pesquisadores e usuários (cidadãos comuns) que são usuários dos serviços prestados por este governos. 
+                            Por exemplo, pode-se identificar o montante de recursos investidos em determinadas áreas de atuação 
+                            e qual a relação custo-benefício, incluindo os aspectos sociais deste investimento.
+                        </p>
+                    </details>
 
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+                    <details>
+                        <summary>
+                            <strong>Solução</strong>: Elaborar uma Análise automática de qualidade dos Dados Abertos Governamentais nesses portais
+                        </summary>
+                        <p>
+                            que utilizam a ferramenta de catalogação de dados, Ckan, com o intuito de analisar se esses dados estão de acordo com os princípios dos dados abertos
+                            governamentais.
+                        </p>
+                    </details>
+                    
+                    <details>
+                        <summary>
+                            <strong>De que forma?</strong> Através da linguagem de programação Python 
+                            desenvolver um scripts(código) para realizar essa análise de forma automática
+                        </summary>
+                        <p>
+                            apresentando como resultado a qualidade do dado pesquisado, baseando essa, 
+                            no quanto este está alinhado com os princípios de dados abertos governamentais.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <strong>Conclusão</strong>: Com a Análise feita, conclui-se que essas plataformas não possuem uma ferramenta para verificar
+                            e validar o cumprimento dos princípios dos dados abertos governamentais
+                            
+                        </summary>
+                        <p>
+                            Dessa forma é necessária a criação de uma solução automatizada ou semi-automatizada 
+                            para apoiar a análise dos dados abertos governamentais.
+                            Facilitando o entendimento e o acesso de diversos setores da sociedade, 
+                            incluindo gestores públicos, pesquisadores e usuários (cidadãos comuns) 
+                            que são usuários dos serviços prestados por estes governos.
+                        </p>
+                    </details>
+                </p>
+
+                <p id="experiencias_item02">
+                    <span class="box_name"> <strong>Pesquisador de Functional Safety</strong>, Ford/IEL</span> <br>
+                    <span class="date">julho/2021 - o momento</span> <br> <br>
+                    <span class="title">
+                        <strong>
+                            Contribuições:
+                        </strong>
+                    </span> 
+                    <details>
+                        <summary>Liderança em projeto de automação de atividades, elaborado atraves do Python</summary>
+                    </details>
+                    <details>
+                        <summary>Participação de projeto sobre analises de dados de veículos conectados com objetivo de auxiliar Fusa Engineers</summary>
+                    </details>
+                </p>
+            </div>
+
+
+            <div id="skills">
+                <h2>Skills</h2>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python" style="width:42px;height:42px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL" style="width:42px;height:42px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="HTML" style="width:42px;height:42px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" style="width:42px;height:42px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" style="width:42px;height:42px;">
+            </div>
+            
+        </div>
+
+        <div class="column">
+
+            <div id="formacao">
+                <h2>Formação</h2>
+                <p>
+                    <span class="box_name"> <strong>Unifacs</strong>, Ciência da Computação - Bacharelado</span> <br>
+                    <span class="date">2020 - 2024</span> <br>
+                </p>
+                <p>
+                    <span class="box_name"> <strong>Alura</strong>, Python - Formação</span> <br>
+                    <span class="date">Junho/2021 - Janeiro/2022</span> <br>
+                </p>
+            </div>
+
+
+            <div id="projetos">
+                <h2>Projetos</h2>
+                <p>
+                    <span class="box_name"><strong>Maratona Behind the Code</strong> - IBM</span> <br>
+                    <span class="date">2020</span> <br>
+                    <details>
+                        <summary>
+                            Desenvolvimento do conhecimento sobre I.A, Machine Learning e Redes Neurais, 
+                            dado atraves de desafios semanais envolvendo esses tópicos
+                        </summary>
+                    </details>
+                    
+                </p>  
+            </div>
+
+
+            <div id="conhecimentos">
+                <h2>Conhecimentos</h2>
+                <p>
+                    <strong>Inglês</strong> - Intermediário <br>
+                    <strong>Data Science</strong> - Básico <br>
+                    <strong>Machine Learning</strong> - Básico <br>
+                </p>
+            </div>
+
+
+            <div id="social">
+                <h2>Social</h2> 
+                <p>
+                    <a href="mailto:manoelfelipefern@gmail.com">Gmail</a>
+                    <a href="https://github.com/manofern">Github</a> 
+                    <a href="https://www.linkedin.com/in/manoel-fernandes-b366161ab/">Linkedin</a>    
+                </p>
+            </div>
+
+        </div>
+
+    </div>
 </body>
+
 </html>
