@@ -29,7 +29,17 @@ details[open] summary {
     display: flex;
 }
 
-.img_contact {
+.contact_img {
+    width: 10%;
+    height: auto;
+}
+
+.skills_img {
+    width: 12%;
+    height: auto;
+}
+
+.stars {
     width: 10%;
     height: auto;
 }
