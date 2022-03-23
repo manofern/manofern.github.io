@@ -1,3 +1,8 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 img {
     width: 10%;
     height: auto;
@@ -42,4 +47,8 @@ details[open] summary {
 .stars {
     width: 10%;
     height: auto;
+}
+
+.p_two_columns {
+    margin-left: 8px;
 }
