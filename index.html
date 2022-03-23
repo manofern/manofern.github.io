@@ -4,222 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
 
-    <title>Curriculo</title>
-
-    <style>
-        :root {
-            --background-color: rgb(248, 244, 244);
-            --primary-color: #000814;
-            --secondary-color: #001D3D;
-            --title-color: #003566; 
-        }
-        * {
-        box-sizing: border-box;
-        color: var(--primary-color);
-        }
-        /* Create two equal columns that floats next to each other */
-        .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        margin: 0px 0px;  
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-
-        .box_name {
-            font-size: 22px;
-            color: var(--title-color);
-        }
-        .box_name strong{
-            font-size: 22px;
-            color: var(--title-color);
-
-        }
-        .date {
-            font-size: 14px;
-            color: var(--title-color);
-
-        }
-        .title {
-            font-size:16px;
-        }
-        body {
-            background-color: var(--background-color)
-        }
-        h1 {
-            color: var(--primary-color);
-        }
-        h2{
-            font-size: 30px;
-            color: var(--secondary-color)
-        }
-        h2 span {
-            background-color: #EDC330;
-            box-shadow: 10px 0 0px 0px #EDC330, -10px 0 0px 0px #EDC330;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div class="row">
-            <div style="padding: 10px;">
-                <h1>Manoel Felipe C. A. Fernandes</h1>
-            <!-- <p>Entusiasta da tecnologia, adora jogar no tempo livre e de ter longas conversas sobre o universo...</p> -->
-            </div>
+    <header>
+        <h1>Hello, my name is Manoel Fernandes</h1>
+    </header>
 
-        <div class="column" >
+    <div class="line">
+      <details>
+        <summary>About</summary>
+        <p>
+          Entusiasta da tecnologia, adoro jogar e de ter longas conversas sobre o universo
+        </p>
+      </details>
 
-            <div id="experiencias">
-                <h2> Experiencias </h2>   
-
-                <p id="experiencias_item01">
-                    <span class="box_name"> <strong>Iniciação Científica</strong>, CNPQ</span> <br>
-                    <span class="date">Agosto/2020 - Agosto/2021</span> <br> <br>
-                    <span class="title"> 
-                        <strong>
-                            Análise de Dados Aberto Governamentais que utilizam a Ferramenta Ckan
-                        </strong> 
-                    </span> 
-                    <br>
-                    <details>
-                        <summary>
-                            <strong>Objetivo</strong>: Responder a perguntas de interesse público considerando a estratégia proposta.
-                        </summary>
-                        <p>
-                            responder questões de interesse de diversos setores da sociedade, incluindo gestores públicos, 
-                            pesquisadores e usuários (cidadãos comuns) que são usuários dos serviços prestados por este governos. 
-                            Por exemplo, pode-se identificar o montante de recursos investidos em determinadas áreas de atuação 
-                            e qual a relação custo-benefício, incluindo os aspectos sociais deste investimento.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            <strong>Solução</strong>: Elaborar uma Análise automática de qualidade dos Dados Abertos Governamentais nesses portais
-                        </summary>
-                        <p>
-                            que utilizam a ferramenta de catalogação de dados, Ckan, com o intuito de analisar se esses dados estão de acordo com os princípios dos dados abertos
-                            governamentais.
-                        </p>
-                    </details>
-                    
-                    <details>
-                        <summary>
-                            <strong>De que forma?</strong> Através da linguagem de programação Python 
-                            desenvolver um scripts(código) para realizar essa análise de forma automática
-                        </summary>
-                        <p>
-                            apresentando como resultado a qualidade do dado pesquisado, baseando essa, 
-                            no quanto este está alinhado com os princípios de dados abertos governamentais.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            <strong>Conclusão</strong>: Com a Análise feita, conclui-se que essas plataformas não possuem uma ferramenta para verificar
-                            e validar o cumprimento dos princípios dos dados abertos governamentais
-                            
-                        </summary>
-                        <p>
-                            Dessa forma é necessária a criação de uma solução automatizada ou semi-automatizada 
-                            para apoiar a análise dos dados abertos governamentais.
-                            Facilitando o entendimento e o acesso de diversos setores da sociedade, 
-                            incluindo gestores públicos, pesquisadores e usuários (cidadãos comuns) 
-                            que são usuários dos serviços prestados por estes governos.
-                        </p>
-                    </details>
-                </p>
-
-                <p id="experiencias_item02">
-                    <span class="box_name"> <strong>Pesquisador de Functional Safety</strong>, Ford/IEL</span> <br>
-                    <span class="date">julho/2021 - o momento</span> <br> <br>
-                    <span class="title">
-                        <strong>
-                            Contribuições:
-                        </strong>
-                    </span> 
-                    <details>
-                        <summary>Liderança em projeto de automação de atividades, elaborado atraves do Python</summary>
-                    </details>
-                    <details>
-                        <summary>Participação de projeto sobre analises de dados de veículos conectados com objetivo de auxiliar Fusa Engineers</summary>
-                    </details>
-                </p>
-            </div>
-
-
-            <div id="skills">
-                <h2>Skills</h2>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python" style="width:42px;height:42px;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL" style="width:42px;height:42px;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="HTML" style="width:42px;height:42px;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS" style="width:42px;height:42px;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" style="width:42px;height:42px;">
-            </div>
-            
-        </div>
-
-        <div class="column">
-
-            <div id="formacao">
-                <h2>Formação</h2>
-                <p>
-                    <span class="box_name"> <strong>Unifacs</strong>, Ciência da Computação - Bacharelado</span> <br>
-                    <span class="date">2020 - 2024</span> <br>
-                </p>
-                <p>
-                    <span class="box_name"> <strong>Alura</strong>, Python - Formação</span> <br>
-                    <span class="date">Junho/2021 - Janeiro/2022</span> <br>
-                </p>
-            </div>
-
-
-            <div id="projetos">
-                <h2>Projetos</h2>
-                <p>
-                    <span class="box_name"><strong>Maratona Behind the Code</strong> - IBM</span> <br>
-                    <span class="date">2020</span> <br>
-                    <details>
-                        <summary>
-                            Desenvolvimento do conhecimento sobre I.A, Machine Learning e Redes Neurais, 
-                            dado atraves de desafios semanais envolvendo esses tópicos
-                        </summary>
-                    </details>
-                    
-                </p>  
-            </div>
-
-
-            <div id="conhecimentos">
-                <h2>Conhecimentos</h2>
-                <p>
-                    <strong>Inglês</strong> - Intermediário <br>
-                    <strong>Data Science</strong> - Básico <br>
-                    <strong>Machine Learning</strong> - Básico <br>
-                </p>
-            </div>
-
-
-            <div id="social">
-                <h2>Social</h2> 
-                <p>
-                    <a href="mailto:manoelfelipefern@gmail.com">Gmail</a>
-                    <a href="https://github.com/manofern">Github</a> 
-                    <a href="https://www.linkedin.com/in/manoel-fernandes-b366161ab/">Linkedin</a>    
-                </p>
-            </div>
-
-        </div>
-
+      <details>
+        <summary>Contact</summary>
+        <a href="mailto:manoelfelipefern@gmail.com"><img class="img_contact" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-plain.svg" alt="Gmail"></a> 
+        <a href="https://github.com/manofern"><img class="img_contact" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github"></a> 
+        <a href="https://www.linkedin.com/in/manoel-fernandes-b366161ab/"><img class="img_contact" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkedin"></a>
+      </details>
     </div>
-</body>
+    
+    <div class="line">
+      <details>
+        <summary>Formação</summary>
 
+        <div>
+          <h3>2020 - 2024 | Unifacs, Ciência da Computação - Bacharelado</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur totam facere necessitatibus, tenetur aperiam vero molestiae ab soluta vitae in expedita obcaecati a ipsum qui reiciendis nostrum et illum odit.</p>
+        </div>
+
+        <div>
+          <h3>Jun/2021 - Jan/2022 | Alura, Python - Formação</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt animi quod porro error blanditiis? Temporibus dolor iste suscipit eligendi, iure est odit unde quaerat repellat praesentium blanditiis consequuntur. Sunt?</p>
+        </div>
+
+
+      </details>
+
+      <details>
+        <summary>Experiencias</summary>
+
+        <div>
+          <h3>Ago/2020 - Ago/2021 | Iniciação Científica, CNQP</h3>
+          <h4>Análise de Dados Aberto Governamentais que utilizam a Ferramenta Ckan</h4>
+          <p><strong>Objetivo:</strong> Responder a perguntas de interesse público considerando a estratégia proposta.</p>
+          <p><strong>Solução:</strong> Elaborar uma Análise automática de qualidade dos Dados Abertos Governamentais nesses portais</p>
+          <p><strong>De que forma?</strong> Através da linguagem de programação Python desenvolver um scripts(código) para realizar essa análise de forma automática</p>
+          <p><strong>Conclusão:</strong> Com a Análise feita, conclui-se que essas plataformas não possuem uma ferramenta para verificar e validar o cumprimento dos princípios dos dados abertos governamentais</p>
+        </div>
+
+        <div>
+          <h3>julho/2021 - o momento | Pesquisador de Functional Safety, Ford/IEL</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempore adipisci, consectetur velit et in, neque cum quasi ducimus harum corrupti autem odio quibusdam aliquam perspiciatis, saepe vel nisi hic?</p>
+        </div>
+
+      </details>
+    </div>
+    
+    <div class="line">
+      <details>
+        <summary>Skills</summary>
+        <div>
+          <img src="img/rating5.png" alt="5 stats">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python">
+        </div>
+        <br>
+        
+        <div>
+          <img src="img/rating4.png" alt="4 stars">
+        </div>
+        <br>
+        
+        <div>
+          <img src="img/rating3.png" alt="3 stars">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="Html5"> 
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS"> 
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git">
+        </div>
+        <br>
+
+        <div>
+          <img src="img/rating2.png" alt="2 stars">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" alt="Arduino">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript"> 
+        </div>
+        <br>
+
+        <div>
+          <img src="img/rating1.png" alt="1 star">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java">
+        </div>
+        <br>
+        
+        <p>* 5 = Profissional, 4 = Avançado, 3 = Intermediário, 2 = Básico, 1 = Teórico</p>
+
+
+
+      </details>
+
+      <details>
+        <summary>Conhecimentos</summary>
+        <div>
+          <h3>Inglês - Intermediário</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam omnis, earum accusantium unde iste a vitae similique veniam quas suscipit consequatur nobis aliquam quisquam cumque minus sed temporibus debitis!</p>
+        </div>
+        <div>
+          <h3>Data Science - Básico</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, exercitationem cum aperiam aliquid dolores quis provident minima ab vero architecto corrupti? Quisquam voluptatum laborum fuga magnam repellat fugiat quis labore.</p>
+        </div>
+        <div>
+          <h3>Machine Learning - Básico</h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quae dicta fugit, quod provident blanditiis accusantium deserunt, corporis hic quo voluptatem! Fuga porro nihil vel odit, alias quae quod consequuntur.
+        </div>
+        
+            
+      </details>
+    </div>
+
+</body>
 </html>
