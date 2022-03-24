@@ -1,54 +1,57 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-img {
-    width: 10%;
-    height: auto;
-  }
-
-details {
-    width: 50%;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 5% 5%;
-}
-
-summary {
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-details[open] {
-    padding: .5em;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .line {
-    display: flex;
+  display: flex;
+}
+
+details {
+  width: 50%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 5% 5%;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+img {
+  width: 10%;
+  height: auto;
 }
 
 .contact_img {
-    width: 10%;
-    height: auto;
+  width: 10%;
+  height: auto;
 }
 
 .skills_img {
-    width: 12%;
-    height: auto;
+  width: 12%;
+  height: auto;
 }
 
 .stars {
-    width: 10%;
-    height: auto;
+  width: 10%;
+  height: auto;
 }
 
 .p_two_columns {
-    margin-left: 8px;
+  margin-left: 8px;
 }
